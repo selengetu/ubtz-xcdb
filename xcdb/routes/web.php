@@ -20,3 +20,4 @@ Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout')->name
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/update_salary/{salary_id}/{column}/{value}', 'HomeController@update_salary')->name('update_salary');
